@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo interactivo de la infraestructura tecnológica de la Universidad Cooperativa de Colombia, Seccional Bucaramanga: salas audiovisuales, HyFlex, informática, auditorios y recorridos 360°.">
+    <meta name="theme-color" content="#153F50">
+    <title>Espacios que conectan | Gestión Tecnológica UCC Bucaramanga</title>
+    <link rel="icon" type="image/png" href="assets/IMG/logo/ucc-logo.png">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <script src="assets/JS/data.js" defer></script>
+    <script src="assets/JS/app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a class="brand" href="#inicio" aria-label="Espacios que conectan, ir al inicio">
+                <img class="brand__logo" src="assets/IMG/logo/ucc-logo.png" alt="Universidad Cooperativa de Colombia" width="816" height="725">
+                <span class="brand__text">
+                    <strong>Espacios que conectan</strong>
+                    <small>Gestión Tecnológica – Bucaramanga</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu"></ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <noscript>
+            <div class="noscript container">Este sitio necesita JavaScript para mostrar el catálogo interactivo de espacios.</div>
+        </noscript>
+
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <img class="hero__image" src="assets/IMG/portada/auditorio-mayor-nave-principal.webp" alt="Nave principal del Auditorio Mayor de la Universidad Cooperativa de Colombia, Seccional Bucaramanga" width="1700" height="1033" fetchpriority="high">
+            <div class="hero__shade" aria-hidden="true"></div>
+            <div class="container hero__content" id="hero-content"></div>
+        </section>
+
+        <section class="section section--stats" id="infraestructura" aria-labelledby="infraestructura-title">
+            <div class="container" id="infraestructura-content" data-reveal></div>
+        </section>
+
+        <section class="section section--audiovisuales" id="audiovisuales" aria-labelledby="audiovisuales-title">
+            <div class="container" id="audiovisuales-content" data-reveal></div>
+        </section>
+
+        <section class="section section--hyflex" id="hyflex" aria-labelledby="hyflex-title">
+            <div class="container" id="hyflex-content" data-reveal></div>
+        </section>
+
+        <section class="section section--informatica" id="informatica" aria-labelledby="informatica-title">
+            <div class="container" id="informatica-content" data-reveal></div>
+        </section>
+
+        <section class="section section--auditorios" id="auditorios" aria-labelledby="auditorios-title">
+            <div class="container" id="auditorios-content" data-reveal></div>
+        </section>
+
+        <section class="section section--recomendaciones" id="recomendaciones" aria-labelledby="recomendaciones-title">
+            <div class="container" id="recomendaciones-content" data-reveal></div>
+        </section>
+
+        <section class="section section--recorridos" id="recorridos" aria-labelledby="recorridos-title">
+            <div class="container" id="recorridos-content" data-reveal></div>
+        </section>
+
+        <section class="section section--notas" id="notas" aria-labelledby="notas-title">
+            <div class="container" id="notas-content" data-reveal></div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer-content"></footer>
+
+    <button class="back-to-top" type="button" aria-label="Volver al inicio de la página" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+    </button>
+</body>
+</html>
